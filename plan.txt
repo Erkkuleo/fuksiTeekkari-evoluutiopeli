@@ -1,0 +1,20 @@
+SUUNNITELMA: Fuksi, Tupsu - Evoluutiopeli
+
+Lyhyt kuvaus:
+
+    Pelissä pelataan orientaatioviikolla merkittävässä roolissa ollutta evoluutiopeliä.
+
+Toiminnot ja säännöt:
+
+    * Kohdataan saman tasoisia pelaajia (fuksi, tupsu, N)
+
+    * Siirrytään taistelu tilaan.
+
+    * Pelataan kivi, sakset, paperi random generaattoria vastaan.
+
+    * jos voitetaan siirrytään seuraavalle tasolle
+
+
+Voittoehto:
+
+    Voitetaan N ja saadaan yliopisto valmiiksi.
