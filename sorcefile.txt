@@ -1,1 +1,38 @@
+title Fuksi, Teekkari - evoluutioeli
+author Aleksi, Juha, Erkka
+
+========
+OBJECTS
+========
+
+
+=======
+LEGEND
+=======
+
+
+
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+
+
+======
+RULES
+======
+
+==============
+WINCONDITIONS
+==============
+
+
+=======
+LEVELS
+=======
+
 
