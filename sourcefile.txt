@@ -1,5 +1,7 @@
 title Fuksi, Teekkari - evoluutioeli
 author Aleksi, Juha, Erkka
+(zoomscreen 50 x 50)
+realtime_interval 0.5
 
 ========
 OBJECTS
@@ -8,6 +10,9 @@ background
 grey
 
 (Fuksivaiheen spritet)
+wall 
+white
+
 
 pelaaja00
 transparent
@@ -351,9 +356,6 @@ black
 0...0
 00.00
 
-player
-transparent
-
 tempMoveRight
 transparent
 
@@ -372,13 +374,85 @@ red
 enemyChoosing
 blue
 
+npc1
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc2
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc3
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc4
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc5
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc6
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+npc7
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+muuriPelaaja
+black
+
+
+muuriNpc
+black
+
 =======
 LEGEND
 =======
 . = background
 p = player
 
+# = wall
+
+m = muuriPelaaja
+n = muuriNpc
+
 body=pelaaja00 or pelaaja01 or pelaaja02 or pelaaja03 or pelaaja04 or pelaaja10 or pelaaja11 or pelaaja12 or pelaaja13 or pelaaja14 or pelaaja20 or pelaaja21 or (pelaaja22 or) pelaaja23 or pelaaja24 or pelaaja30 or pelaaja31 or pelaaja32 or pelaaja33 or pelaaja34 or pelaaja40 or pelaaja41 or pelaaja42 or pelaaja43 or pelaaja44
+
+(muuriPelaaja or muuriNpc)
+
+npc = npc1 or npc2 or npc3 or npc4 or npc5 or npc6 or npc7
 
 0 = pelaaja00
 1 = pelaaja01
@@ -405,8 +479,14 @@ d = pelaaja41
 f = pelaaja42
 g = pelaaja43
 h = pelaaja44
-=======
 
+╗ = npc1
+╝ = npc2
+¢ = npc3
+¥ = npc4
+┐ = npc5
+┴ = npc5
+├ = npc7
 
 ; = fuksi1 
 : = fuksi2 
@@ -430,7 +510,7 @@ $ = fuksi10
 * = paper
 § = scissors
 
-A = choosebox and rock
+? = choosebox and rock
 ½ = limit
 
 c = chosen
@@ -447,9 +527,11 @@ SOUNDS
 COLLISIONLAYERS
 ================
 background
-player, npc1, npc2, npc3, npc4,pelaaja00, pelaaja01, pelaaja02, pelaaja03, pelaaja04, pelaaja10, pelaaja11, pelaaja12, pelaaja13, pelaaja14, pelaaja20, pelaaja21, (pelaaja22,) pelaaja23, pelaaja24, pelaaja30, pelaaja31, pelaaja32, pelaaja33, pelaaja34, pelaaja40, pelaaja41, pelaaja42, pelaaja43, pelaaja44, 
-=======
-player
+Wall
+
+player,pelaaja00, pelaaja01, pelaaja02, pelaaja03, pelaaja04, pelaaja10, pelaaja11, pelaaja12, pelaaja13, pelaaja14, pelaaja20, pelaaja21, (pelaaja22,) pelaaja23, pelaaja24, pelaaja30, pelaaja31, pelaaja32, pelaaja33, pelaaja34, pelaaja40, pelaaja41, pelaaja42, pelaaja43, pelaaja44, npc1, npc2, npc3, npc4, npc5, npc6, npc7, 
+
+muuriPelaaja, muuriNpc
 
 fuksi1 fuksi2 fuksi3 fuksi4 fuksi5 fuksi6 fuksi7 fuksi8 fuksi9 fuksi10 fuksi11 fuksi13 fuksi14 fuksi15 fuksi17 fuksi18 fuksi19
 rock paper scissors chosen enemyChosen enemyChoosing
@@ -471,6 +553,33 @@ RULES
 [ ^ Body | Body ] -> [ ^ Body | ^ Body ]
 [ > Body | Wall ] -> cancel
 
+[> Player ] [ muuriPelaaja ] -> [> Player ][> muuriPelaaja]
+
+
+(NPC random liikkuminen)
+
+[stationary npc1] -> [randomDir npc1]
+[stationary npc2] -> [randomDir npc2]
+[stationary npc3] -> [randomDir npc3]
+[stationary npc4] -> [randomDir npc4]
+[stationary npc5] -> [randomDir npc5]
+[stationary npc6] -> [randomDir npc6]
+[stationary npc7] -> [randomDir npc7]
+
+(npc liikkuminen)
+
+[ > npc | Body ] -> [ > npc | > Body ]
+[ ^ npc | Body ] -> [ ^ npc | ^ Body ]
+[ V npc | Body ] -> [ V npc | V Body ]
+[ < npc | Body ] -> [ < npc | < Body ]
+[ > Body | Body ] -> [ > Body | > Body ]
+[ < Body | Body ] -> [ < Body | < Body ]
+[ V Body | Body ] -> [ V Body | V Body ]
+[ ^ Body | Body ] -> [ ^ Body | ^ Body ]
+[ > Body | Wall ] -> cancel
+(npc suojamuurin liikuttaminen)
+
+[> npc ] [muuriNpc] -> [> npc ][> muuriNpc]
 
 
 (Tappelumoden rulet)
@@ -482,17 +591,12 @@ horizontal [> Player ] [ choosebox ] -> [> Player ][> choosebox]
 
 [enemyChoosing] -> [random options]
 
-(NPC random liikkuminen)
+[muuriPelaaja | muuriNpc] -> win
 
-[stationary npc1] -> [randomDir npc1]
-[stationary npc2] -> [randomDir npc2]
-[stationary npc3] -> [randomDir npc3]
-[stationary npc4] -> [randomDir npc4]
 
 ==============
 WINCONDITIONS
 ==============
- 
 
 =======
 LEVELS
@@ -502,6 +606,55 @@ LEVELS
 49tah
 38rog
 27pif
+16wud
+05qys)
+
+(NPC1 sprite
+49tah
+38rog
+27╗if
+16wud
+05qys)
+
+(NPC2 sprite
+49tah
+38rog
+27╝if
+16wud
+05qys)
+
+(NPC3 sprite
+49tah
+38rog
+27¢if
+16wud
+05qys)
+
+(NPC4 sprite
+49tah
+38rog
+27¥if
+16wud
+05qys)
+
+(NPC5 sprite
+49tah
+38rog
+27┐if
+16wud
+05qys)
+
+(NPC6 sprite
+49tah
+38rog
+27┴if
+16wud
+05qys)
+
+(NPC7 sprite
+49tah
+38rog
+27├if
 16wud
 05qys)
 
@@ -517,16 +670,16 @@ LEVELS
 #..............................................................................................................................................................#
 #..............................................................................................................................................................#
 #..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
-#..............................................................................................................................................................#
+#..........................................................nnnnnnn.............................................................................................#
+#..........................................................n49tahn.............................................................................................#
+#..........................................................n38rogn.............................................................................................#
+#..............................mmmmmmm.....................n27├ifn.............................................................................................#
+#..............................m49tahm.....................n16wudn.............................................................................................#
+#..............................m38rogm.....................n05qysn.............................................................................................#
+#..............................m27pifm.....................nnnnnnn.............................................................................................#
+#..............................m16wudm.........................................................................................................................#
+#..............................m05qysm.........................................................................................................................#
+#..............................mmmmmmm.........................................................................................................................#
 #..............................................................................................................................................................#
 #..............................................................................................................................................................#
 #..............................................................................................................................................................#
@@ -636,5 +789,4 @@ message
 ...£¤$%.
 ..e.€&/.
 ..c.{¨~.
-½Ap*.§½.
-
+½?p*.§½.
