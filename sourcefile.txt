@@ -7,6 +7,181 @@ OBJECTS
 background
 grey
 
+(Fuksivaiheen spritet)
+
+pelaaja00
+transparent
+
+pelaaja10
+black blue grey transparent
+33301
+33301
+33022
+33000
+33333
+
+pelaaja20
+black transparent
+01110
+01110
+01110
+01110
+11111
+
+pelaaja30
+black blue grey transparent
+10333
+10333
+22033
+00033
+33333
+
+pelaaja40
+transparent
+
+pelaaja01
+transparent black red
+00012
+00012
+00012
+00001
+00000
+
+pelaaja11
+red black lightbrown
+01110
+00002
+00002
+00002
+11111
+
+pelaaja21
+transparent black lightbrown red
+33333
+23332
+22222
+21112
+10001
+
+pelaaja31
+red black lightbrown
+01110
+20000
+20000
+20000
+11111
+
+pelaaja41
+transparent black red
+21000
+21000
+21000
+10000
+00000
+
+pelaaja02
+transparent black red
+00000
+00000
+00000
+00001
+00012
+
+pelaaja12
+transparent black red lightbrown
+01333
+01133
+12222
+22222
+22222
+
+player
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+pelaaja32
+red lightbrown transparent black
+11132
+11332
+00003
+00000
+00000
+
+pelaaja42
+transparent black red
+00000
+00000
+00000
+10000
+21000
+
+pelaaja03
+transparent
+
+
+pelaaja13
+transparent black brown lightbrown white blue
+12223
+12223
+12333
+01333
+13345
+
+pelaaja23
+lightbrown white
+00000
+00000
+00000
+00000
+10001
+
+pelaaja33
+transparent black brown lightbrown white blue
+22210
+33221
+33321
+33310
+54331
+
+pelaaja43
+transparent
+
+pelaaja04
+transparent
+
+pelaaja14
+transparent black brown
+00000
+00000
+00011
+00122
+01222
+
+pelaaja24
+transparent black brown lightbrown
+00000
+11111
+22222
+22222
+33332
+
+pelaaja34
+transparent black brown
+00000
+00000
+11000
+22100
+22210
+
+pelaaja44
+transparent
+
+
+
 fuksi1
 blue lightgreen red
 .000.
@@ -203,6 +378,36 @@ LEGEND
 . = background
 p = player
 
+body=pelaaja00 or pelaaja01 or pelaaja02 or pelaaja03 or pelaaja04 or pelaaja10 or pelaaja11 or pelaaja12 or pelaaja13 or pelaaja14 or pelaaja20 or pelaaja21 or (pelaaja22 or) pelaaja23 or pelaaja24 or pelaaja30 or pelaaja31 or pelaaja32 or pelaaja33 or pelaaja34 or pelaaja40 or pelaaja41 or pelaaja42 or pelaaja43 or pelaaja44
+
+0 = pelaaja00
+1 = pelaaja01
+2 = pelaaja02
+3 = pelaaja03
+4 = pelaaja04
+5 = pelaaja10
+6 = pelaaja11
+7 = pelaaja12
+8 = pelaaja13
+9 = pelaaja14
+q = pelaaja20
+w = pelaaja21
+(e = pelaaja22)
+r = pelaaja23
+t = pelaaja24
+y = pelaaja30
+u = pelaaja31
+i = pelaaja32
+o = pelaaja33
+a = pelaaja34
+s = pelaaja40
+d = pelaaja41
+f = pelaaja42
+g = pelaaja43
+h = pelaaja44
+=======
+
+
 ; = fuksi1 
 : = fuksi2 
 - = fuksi3
@@ -242,7 +447,10 @@ SOUNDS
 COLLISIONLAYERS
 ================
 background
+player, npc1, npc2, npc3, npc4,pelaaja00, pelaaja01, pelaaja02, pelaaja03, pelaaja04, pelaaja10, pelaaja11, pelaaja12, pelaaja13, pelaaja14, pelaaja20, pelaaja21, (pelaaja22,) pelaaja23, pelaaja24, pelaaja30, pelaaja31, pelaaja32, pelaaja33, pelaaja34, pelaaja40, pelaaja41, pelaaja42, pelaaja43, pelaaja44, 
+=======
 player
+
 fuksi1 fuksi2 fuksi3 fuksi4 fuksi5 fuksi6 fuksi7 fuksi8 fuksi9 fuksi10 fuksi11 fuksi13 fuksi14 fuksi15 fuksi17 fuksi18 fuksi19
 rock paper scissors chosen enemyChosen enemyChoosing
 choosebox tempMoveRight tempMoveLeft limit
@@ -251,6 +459,20 @@ choosebox tempMoveRight tempMoveLeft limit
 ======
 RULES
 ======
+(Säännöt ison pelaajan liikuttamiseen)
+
+[ > Player | Body ] -> [ > Player | > Body ]
+[ ^ Player | Body ] -> [ ^ Player | ^ Body ]
+[ V Player | Body ] -> [ V Player | V Body ]
+[ < Player | Body ] -> [ < Player | < Body ]
+[ > Body | Body ] -> [ > Body | > Body ]
+[ < Body | Body ] -> [ < Body | < Body ]
+[ V Body | Body ] -> [ V Body | V Body ]
+[ ^ Body | Body ] -> [ ^ Body | ^ Body ]
+[ > Body | Wall ] -> cancel
+
+
+
 (Tappelumoden rulet)
 horizontal [> Player ] [ choosebox ] -> [> Player ][> choosebox]
 
@@ -275,6 +497,16 @@ WINCONDITIONS
 =======
 LEVELS
 =======
+
+(Player sprite
+49tah
+38rog
+27pif
+16wud
+05qys)
+
+
+
 ################################################################################################################################################################
 #..............................................................................................................................................................#
 #..............................................................................................................................................................#
