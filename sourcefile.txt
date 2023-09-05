@@ -180,6 +180,8 @@ transparent black brown
 pelaaja44
 transparent
 
+
+
 fuksi1
 blue lightgreen red
 .000.
@@ -375,6 +377,7 @@ LEGEND
 =======
 . = background
 p = player
+
 body=pelaaja00 or pelaaja01 or pelaaja02 or pelaaja03 or pelaaja04 or pelaaja10 or pelaaja11 or pelaaja12 or pelaaja13 or pelaaja14 or pelaaja20 or pelaaja21 or (pelaaja22 or) pelaaja23 or pelaaja24 or pelaaja30 or pelaaja31 or pelaaja32 or pelaaja33 or pelaaja34 or pelaaja40 or pelaaja41 or pelaaja42 or pelaaja43 or pelaaja44
 
 0 = pelaaja00
@@ -402,6 +405,9 @@ d = pelaaja41
 f = pelaaja42
 g = pelaaja43
 h = pelaaja44
+=======
+
+
 ; = fuksi1 
 : = fuksi2 
 - = fuksi3
@@ -442,6 +448,9 @@ COLLISIONLAYERS
 ================
 background
 player, npc1, npc2, npc3, npc4,pelaaja00, pelaaja01, pelaaja02, pelaaja03, pelaaja04, pelaaja10, pelaaja11, pelaaja12, pelaaja13, pelaaja14, pelaaja20, pelaaja21, (pelaaja22,) pelaaja23, pelaaja24, pelaaja30, pelaaja31, pelaaja32, pelaaja33, pelaaja34, pelaaja40, pelaaja41, pelaaja42, pelaaja43, pelaaja44, 
+=======
+player
+
 fuksi1 fuksi2 fuksi3 fuksi4 fuksi5 fuksi6 fuksi7 fuksi8 fuksi9 fuksi10 fuksi11 fuksi13 fuksi14 fuksi15 fuksi17 fuksi18 fuksi19
 rock paper scissors chosen enemyChosen enemyChoosing
 choosebox tempMoveRight tempMoveLeft limit
@@ -461,6 +470,8 @@ RULES
 [ V Body | Body ] -> [ V Body | V Body ]
 [ ^ Body | Body ] -> [ ^ Body | ^ Body ]
 [ > Body | Wall ] -> cancel
+
+
 
 (Tappelumoden rulet)
 horizontal [> Player ] [ choosebox ] -> [> Player ][> choosebox]
@@ -626,3 +637,4 @@ message
 ..e.€&/.
 ..c.{¨~.
 ½Ap*.§½.
+
