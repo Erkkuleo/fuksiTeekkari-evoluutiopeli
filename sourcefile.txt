@@ -3,6 +3,7 @@ author Aleksi, Juha, Erkka
 (zoomscreen 50 x 50)
 realtime_interval 0.25
 throttle_movement 
+again_interval 0.5
 
 ========
 OBJECTS
