@@ -1,3 +1,4 @@
+(Aleksi Kuusinen, Juha Vanhala, Erkka Kiukkonen)
 title Fuksi, Teekkari - evoluutipeli
 author Aleksi, Juha, Erkka
 (zoomscreen 50 x 50)
