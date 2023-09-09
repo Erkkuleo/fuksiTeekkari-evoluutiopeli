@@ -1,0 +1,1762 @@
+title Fuksi, Teekkari - evoluutioeli
+author Aleksi, Juha, Erkka
+(zoomscreen 50 x 50)
+realtime_interval 0.1
+throttle_movement 
+again_interval 0.5
+
+========
+OBJECTS
+========
+background
+lightgreen green
+11000
+01100
+00110
+00011
+10001
+
+taivas
+#03befc
+00000
+00000
+00000
+00000
+00000
+
+puska00
+green brown red
+.0200
+.0000
+..000
+...00
+....1
+
+puska10
+green brown red
+00000
+00000
+01100
+11010
+11111
+
+puska20
+green brown red
+00000
+0000.
+000..
+00...
+.....
+
+puska21
+green brown red
+0000.
+00000
+00000
+00000
+20000
+
+puska11
+green brown red
+00000
+00002
+00000
+02000
+00000
+
+puska01
+green brown red
+00020
+00000
+00000
+00000
+.0200
+
+puska02
+green brown red
+...00
+..000
+..000
+.0000
+00200
+
+puska12
+green brown red
+0000.
+00000
+20000
+02000
+00000
+
+puska22
+green brown red
+.....
+00...
+000..
+200..
+0000.
+
+bottomBarBattle
+darkgray gray
+00000
+10101
+01010
+10101
+01010
+
+(Fuksivaiheen spritet)
+wall 
+transparent
+
+
+pelaaja00
+transparent
+
+pelaaja10
+black blue grey transparent
+33301
+33301
+33022
+33000
+33333
+
+pelaaja20
+black transparent
+01110
+01110
+01110
+01110
+11111
+
+pelaaja30
+black blue grey transparent
+10333
+10333
+22033
+00033
+33333
+
+pelaaja40
+transparent
+
+pelaaja01
+transparent black red
+00012
+00012
+00012
+00001
+00000
+
+pelaaja11
+red black lightbrown
+01110
+00002
+00002
+00002
+11111
+
+pelaaja21
+transparent black lightbrown red
+33333
+23332
+22222
+21112
+10001
+
+pelaaja31
+red black lightbrown
+01110
+20000
+20000
+20000
+11111
+
+pelaaja41
+transparent black red
+21000
+21000
+21000
+10000
+00000
+
+pelaaja02
+transparent black red
+00000
+00000
+00000
+00001
+00012
+
+pelaaja12
+transparent black red lightbrown
+01333
+01133
+12222
+22222
+22222
+
+player2
+red lightbrown white pink black
+11111
+32223
+01110
+04440
+00000
+
+pelaaja32
+red lightbrown transparent black
+11132
+11332
+00003
+00000
+00000
+
+pelaaja42
+transparent black red
+00000
+00000
+00000
+10000
+21000
+
+pelaaja03
+transparent
+
+
+pelaaja13
+transparent black brown lightbrown white blue
+12223
+12223
+12333
+01333
+13345
+
+pelaaja23
+lightbrown white
+00000
+00000
+00000
+00000
+10001
+
+pelaaja33
+transparent black brown lightbrown white blue
+22210
+33221
+33321
+33310
+54331
+
+pelaaja43
+transparent
+
+pelaaja04
+transparent
+
+pelaaja14
+transparent black brown
+00000
+00000
+00011
+00122
+01222
+
+pelaaja24
+transparent black brown lightbrown
+00000
+11111
+22222
+22222
+33332
+
+pelaaja34
+transparent black brown
+00000
+00000
+11000
+22100
+22210
+
+pelaaja44
+transparent
+
+(Tupsuspritet)
+tupsu00
+transparent
+
+tupsu10
+transparent black red lightbrown brown blue white pink yellow gray
+00015
+00015
+00199
+00111
+00000
+
+tupsu20
+transparent black red lightbrown brown blue white pink yellow
+10001
+10001
+10001
+10001
+00000
+
+
+tupsu30
+transparent black red lightbrown brown blue white pink yellow gray
+51000
+51000
+99100
+11100
+00000
+
+
+tupsu40
+transparent
+
+tupsu01
+transparent black red lightbrown brown blue white pink yellow gray
+00012
+00012
+00011
+00000
+00000
+
+
+tupsu11
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+22222
+11255
+00115
+00015
+
+
+tupsu21
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+22222
+55555
+55555
+51115
+
+
+tupsu31
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+22222
+55233
+51133
+51111
+
+
+tupsu41
+transparent black red lightbrown brown blue white pink yellow gray
+21000
+21000
+31000
+31000
+10000
+
+
+tupsu02
+transparent black red lightbrown brown blue white pink yellow gray
+00001
+00013
+00013
+00013
+00012
+
+
+tupsu12
+transparent black red lightbrown brown blue white pink yellow gray
+11133
+11133
+33222
+33222
+22222
+
+
+tupsu22
+transparent black red lightbrown brown blue white pink yellow gray
+33333
+76667
+23332
+21112
+22222
+
+
+tupsu32
+transparent black red lightbrown brown blue white pink yellow gray
+33310
+33110
+22221
+22222
+22222
+
+
+tupsu42
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+00000
+00000
+10000
+21000
+
+
+tupsu03
+transparent
+
+tupsu13
+transparent black red lightbrown brown blue white pink yellow gray
+01111
+04133
+01333
+11133
+11165
+
+
+tupsu23
+transparent black red lightbrown brown blue white pink yellow gray
+11111
+33333
+33333
+33333
+63336
+
+tupsu33
+transparent black red lightbrown brown blue white pink yellow gray
+11110
+34441
+33341
+33310
+56331
+
+
+tupsu43
+transparent
+
+tupsu04
+transparent
+
+tupsu14
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+66666
+66666
+11111
+11111
+
+tupsu24
+transparent black red lightbrown brown blue white pink yellow gray
+00100
+61666
+16666
+11111
+11811
+
+
+tupsu34
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+66666
+66666
+11111
+11111
+
+tupsu44
+transparent
+
+(N-spritet)
+n00
+transparent black red lightbrown brown blue white pink yellow gray
+00004
+00004
+00004
+00004
+00000
+
+n10
+transparent black red lightbrown brown blue white pink yellow gray
+40015
+40015
+40199
+40111
+00000
+
+
+n20
+transparent black red lightbrown brown blue white pink yellow gray
+10001
+10001
+10001
+10001
+00000
+
+
+n30
+transparent black red lightbrown brown blue white pink yellow gray
+51000
+51000
+99100
+11100
+00000
+
+
+n40
+transparent
+
+n01
+transparent black red lightbrown brown blue white pink yellow gray
+00012
+00013
+00014
+00014
+00004
+
+
+
+n11
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+33222
+33255
+41115
+40015
+
+
+
+n21
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+22222
+55555
+55555
+51115
+
+
+n31
+transparent black red lightbrown brown blue white pink yellow gray
+22222
+22222
+55233
+51133
+51111
+
+
+n41
+transparent black red lightbrown brown blue white pink yellow gray
+21000
+21000
+31000
+31000
+10000
+
+
+n02
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+00000
+00000
+00001
+00012
+
+
+
+n12
+transparent black red lightbrown brown blue white pink yellow gray
+11133
+01133
+12222
+22222
+22222
+
+
+
+n22
+transparent black red lightbrown brown blue white pink yellow gray
+33333
+76667
+23332
+21112
+22222
+
+
+n32
+transparent black red lightbrown brown blue white pink yellow gray
+33310
+33110
+22221
+22222
+22222
+
+
+n42
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+00000
+00000
+10000
+21000
+
+
+n03
+transparent
+
+n13
+transparent black red lightbrown brown blue white pink yellow gray
+01111
+04133
+01333
+11133
+11165
+
+
+n23
+transparent black red lightbrown brown blue white pink yellow gray
+11111
+33333
+33333
+33333
+63336
+
+n33
+transparent black red lightbrown brown blue white pink yellow gray
+11110
+34441
+33341
+33310
+56331
+
+
+n43
+transparent
+
+n04
+transparent
+
+n14
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+66666
+66666
+11111
+11111
+
+n24
+transparent black red lightbrown brown blue white pink yellow gray
+00100
+61666
+16666
+11111
+11811
+
+
+n34
+transparent black red lightbrown brown blue white pink yellow gray
+00000
+66666
+66666
+11111
+11111
+
+n44
+transparent
+
+
+(fuksispritet kps-peliin)
+fuksi1
+blue lightgreen red #03befc
+30003
+33300
+33333
+33112
+31122
+
+fuksi2
+blue red yellow #03befc
+33333
+00000
+30333
+11222
+11222
+
+fuksi3
+blue yellow #03befc
+22222
+00222
+22222
+02222
+10222
+
+fuksi4
+lightgreen red blue #03befc
+33333
+33330
+33301
+33301
+33322
+
+fuksi5
+lightgreen red blue
+00111
+01111
+11111
+11111
+22111
+
+fuksi6
+red yellow
+00111
+00011
+00011
+00011
+00011
+
+fuksi7
+yellow blue #03befc
+00122
+00012
+00012
+00001
+00001
+
+fuksi8
+blue #03befc
+00000
+00000
+11000
+11111
+11111
+
+fuksi9
+blue darkbrown lightbrown brown black white
+00000
+00000
+00011
+12233
+12545
+
+fuksi10
+blue yellow lightbrown darkbrown brown black white
+00011
+02222
+22223
+22224
+24265
+
+fuksi11
+yellow blue lightbrown darkbrown brown white #03befc
+00001
+22236
+33236
+42236
+52233
+
+fuksi13
+darkbrown lightbrown
+01111
+01111
+01111
+01111
+01111
+
+fuksi14
+darkbrown lightbrown brown
+12111
+21211
+01011
+11111
+11111
+
+fuksi15
+lightbrown darkbrown
+00011
+00011
+0001.
+0001.
+001..
+
+fuksi17
+lightbrown darkbrown
+.1000
+.1000
+..110
+....1
+...10
+
+fuksi18
+lightbrown brown darkbrown
+11100
+00000
+00000
+22222
+00000
+
+fuksi19
+lightbrown darkbrown
+01...
+01...
+1....
+.....
+1....
+
+teekkari1
+black white #03befc
+22222
+22222
+22222
+22000
+20111
+
+teekkari2
+black white #03befc
+22222
+22222
+20022
+00011
+11111
+
+teekkari3
+white #03befc
+11111
+11111
+11111
+01111
+00011
+
+teekkari4
+black white #03befc
+22221
+22220
+22201
+22200
+22200
+
+teekkari5
+black white
+01111
+11111
+11111
+00000
+00000
+
+teekkari6
+black white yellow
+11111
+11111
+11111
+02200
+02200
+
+teekkari7
+black white
+11111
+11111
+11111
+00000
+00000
+
+teekkari8
+black darkbrown #03befc
+22202
+22022
+22022
+22022
+22021
+
+teekkari9
+lightbrown brown darkbrown darkgray black white
+33333
+33333
+20223
+20111
+20545
+
+teekkari10
+lightbrown brown darkgray black white
+22222
+22222
+22222
+00011
+01043
+
+teekkari11
+lightbrown brown darkbrown darkgray white #03befc
+33335
+33335
+22025
+10025
+40022
+
+teekkari12
+black darkbrown
+..0.1
+..0.1
+.000.
+00000
+00000
+
+teekkari16
+black
+00000
+00000
+0.000
+0.0.0
+....0
+
+vanhus5
+black white lightbrown gray
+10022
+11323
+11331
+00000
+00000
+
+vanhus6
+black white lightbrown yellow gray
+44222
+11442
+14411
+03300
+03300
+
+vanhus12
+black darkbrown gray
+..0.1
+..0.1
+.000.
+00000
+02002
+
+vanhus16
+black gray lightgray
+12101
+22212
+2.222
+2.2.2
+....2
+
+
+
+rock
+white
+.000.
+00000
+00000
+00000
+.000.
+
+paper
+white
+.....
+.....
+.....
+00000
+.....
+
+scissors
+white
+...0.
+...0.
+...0.
+00000
+...00
+
+choosebox
+black
+00.00
+0...0
+.....
+0...0
+00.00
+npc1
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc2
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc3
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc4
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc5
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc6
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+npc7
+red lightbrown white pink black
+11111
+13331
+01110
+04440
+00000
+
+muuriPelaaja
+transparent
+
+
+muuriNpc
+black
+muuriNpc2
+black
+muuriNpc3
+black
+muuriNpc4
+black
+
+player1 (taistelumodin pelaaja)
+transparent
+limit
+transparent
+
+(Taistelumoodin game stateja ja timereita)
+chosen
+transparent
+enemyChosen
+transparent
+enemyChoosing
+transparent
+gameState
+#03befc
+winState
+#03befc
+loseState
+#03befc
+drawState
+#03befc
+gameEndTimer
+#03befc
+gameEndTimer0
+#03befc
+gameEndTimer1
+#03befc
+gameEndTimer2
+#03befc
+gameHasEnded
+#03befc
+moveToNextLevel
+#03befc
+wait1
+transparent
+winMessage1
+#03befc
+winMessage2
+#03befc
+loseMessage1
+#03befc
+loseMessage2
+#03befc
+drawMessage1
+#03befc
+drawMessage2
+#03befc
+
+
+=======
+LEGEND
+=======
+. = background
+╬ = taivas
+player = player2 or player1
+
+p = player2
+© = player1
+
+
+
+# = wall
+
+m = muuriPelaaja
+n = muuriNpc
+
+body=pelaaja00 or pelaaja01 or pelaaja02 or pelaaja03 or pelaaja04 or pelaaja10 or pelaaja11 or pelaaja12 or pelaaja13 or pelaaja14 or pelaaja20 or pelaaja21 or (pelaaja22 or) pelaaja23 or pelaaja24 or pelaaja30 or pelaaja31 or pelaaja32 or pelaaja33 or pelaaja34 or pelaaja40 or pelaaja41 or pelaaja42 or pelaaja43 or pelaaja44 or tupsu00 or tupsu01 or tupsu02 or tupsu03 or tupsu04 or tupsu10 or tupsu11 or tupsu12 or tupsu13 or tupsu14 or tupsu20 or tupsu21 or (tupsu22 or) tupsu23 or tupsu24 or tupsu30 or tupsu31 or tupsu32 or tupsu33 or tupsu34 or tupsu40 or tupsu41 or tupsu42 or tupsu43 or tupsu44 or n00 or n01 or n02 or n03 or n04 or n10 or n11 or n12 or n13 or n14 or n20 or n21 or (n22 or) n23 or n24 or n30 or n31 or n32 or n33 or n34 or n40 or n41 or n42 or n43 or n44 
+ 
+
+(muuriPelaaja or muuriNpc)
+
+npc = npc1 or npc2 or npc3 or npc4 or npc5 or npc6 or npc7
+
+(Fuksitason legend-merkit)
+0 = pelaaja00
+1 = pelaaja01
+2 = pelaaja02
+3 = pelaaja03
+4 = pelaaja04
+5 = pelaaja10
+6 = pelaaja11
+7 = pelaaja12
+8 = pelaaja13
+9 = pelaaja14
+q = pelaaja20
+w = pelaaja21
+( = pelaaja22)
+r = pelaaja23
+t = pelaaja24
+y = pelaaja30
+u = pelaaja31
+i = pelaaja32
+o = pelaaja33
+a = pelaaja34
+s = pelaaja40
+d = pelaaja41
+f = pelaaja42
+g = pelaaja43
+h = pelaaja44
+
+(Tupsutason legend-merkit)
+à= tupsu00
+á= tupsu01
+â = tupsu02
+ã = tupsu03
+ä = tupsu04
+å = tupsu10
+æ = tupsu11
+ç = tupsu12
+è =tupsu13
+é = tupsu14
+ê = tupsu20
+ë = tupsu21
+(= tupsu22)
+í = tupsu23
+î = tupsu24
+ï = tupsu30
+ð = tupsu31
+ñ = tupsu32
+ò = tupsu33
+ó = tupsu34
+ô = tupsu40
+õ = tupsu41
+ö = tupsu42
+÷ = tupsu43
+ø = tupsu44
+
+(N-tason legend-merkit)
+ù = n00
+ú = n01
+û = n02
+ü = n03
+ý = n04
+þ = n10
+ÿ = n11
+® = n12
+¯ = n13
+° = n14
+± = n20
+² = n21
+(= n22)
+´ = n23
+µ = n24
+¶ = n30
+· = n31
+¸ = n32
+¹ = n33
+º = n34
+³ = n40
+ì = n41
+¼ = n42
+» = n43
+« = n44
+
+
+
+╗ = npc1
+╝ = npc2
+¢ = npc3
+¥ = npc4
+┐ = npc5
+┴ = npc5
+├ = npc7
+
+; = fuksi1 
+: = fuksi2 
+- = fuksi3
+_ = fuksi4
+! = fuksi5
+" = fuksi6
+@ = fuksi7
+£ = fuksi8
+¤ = fuksi9
+$ = fuksi10
+% = fuksi11
+€ = fuksi13
+& = fuksi14
+/ = fuksi15
+{ = fuksi17
+¨ = fuksi18
+~ = fuksi19
+
+ƒ = teekkari1
+„ = teekkari2
+… = teekkari3
+† = teekkari4
+‡ = teekkari5
+ˆ = teekkari6
+‰ = teekkari7
+Š = teekkari8
+‹ = teekkari9
+Œ = teekkari10
+Ž = teekkari11
+‘ = teekkari12
+’ = teekkari16
+
+“ = vanhus5
+” = vanhus6
+• = vanhus12
+– = vanhus16
+
+' = rock and bottomBarBattle
+* = paper and bottomBarBattle
+§ = scissors and bottomBarBattle
+
+B = bottomBarBattle
+
+ª = choosebox and rock and bottomBarBattle
+½ = limit and bottomBarBattle
+
+¿ = gameState
+¡ = gameEndTimer
+c = chosen
+e = enemyChosen
+endState = winState or loseState or drawState
+
+winMessage = winMessage1 or winMessage2
+loseMessage = loseMessage1 or loseMessage2
+drawMessage = drawMessage1 or drawMessage2
+
+Options = rock or paper or scissors
+
+(puskat)
+≡ = puska00
+░ = muurinpc2
+▒ = muurinpc3
+▓ = muurinpc4
+▄ = puska11
+█ = puska01
+▀ = puska02
+¦ = puska12
+┼ = puska22
+
+( puskan sprite
+▀¦┼
+█▄▓
+≡░▒
+)
+
+( Fuksi sprite battle modessa
+.;:-.
+_!"@.
+£¤$%.
+.€&/.
+.{¨~.
+)
+
+( Teekkari sprite battle modessa
+.ƒ„…
+†‡ˆ‰
+Š‹ŒŽ
+‘€&/
+’{¨~
+)
+
+( Vanhus sprite battle modessa
+.ƒ„…
+†“”‰
+Š‹ŒŽ
+•€&/
+–{¨~
+)
+
+
+
+=======
+SOUNDS
+=======
+
+choosebox destroy 73373703
+winState create 850
+drawState create 20182901
+loseState create 102
+
+================
+COLLISIONLAYERS
+================
+background
+Wall
+taivas
+
+puska00, puska10, puska20, puska21, puska11, puska01, puska02, puska12, puska22
+
+bottomBarBattle
+
+player2,pelaaja00, pelaaja01, pelaaja02, pelaaja03, pelaaja04, pelaaja10, pelaaja11, pelaaja12, pelaaja13, pelaaja14, pelaaja20, pelaaja21, (pelaaja22,) pelaaja23, pelaaja24, pelaaja30, pelaaja31, pelaaja32, pelaaja33, pelaaja34, pelaaja40, pelaaja41, pelaaja42, pelaaja43, pelaaja44, npc1, npc2, npc3, npc4, npc5, npc6, npc7, tupsu00, tupsu01, tupsu02, tupsu03, tupsu04, tupsu10, tupsu11, tupsu12, tupsu13, tupsu14, tupsu20, tupsu21, tupsu22, tupsu23, tupsu24, tupsu30, tupsu31, tupsu32, tupsu33, tupsu34, tupsu40, tupsu41, tupsu42, tupsu43, tupsu44, n00, n01, n02, n03, n04, n10, n11, n12, n13, n14, n20, n21, n22, n23, n24, n30, n31, n32, n33, n34, n40, n41, n42, n43, n44
+
+muuriPelaaja, muuriNpc
+muurinpc2
+muurinpc3
+muurinpc4
+
+player1
+
+fuksi1 fuksi2 fuksi3 fuksi4 fuksi5 fuksi6 fuksi7 fuksi8 fuksi9 fuksi10 fuksi11 fuksi13 fuksi14 fuksi15 fuksi17 fuksi18 fuksi19 teekkari1 teekkari2 teekkari3 teekkari4 teekkari5 teekkari6 teekkari7 teekkari8 teekkari9 teekkari10 teekkari11 teekkari12 teekkari16 vanhus5 vanhus6 vanhus12 vanhus16
+gameState gameEndTimer gameEndTimer0 gameEndTimer1 gameendtimer2 gameHasEnded winState loseState drawState winMessage1 winMessage2 loseMessage1 loseMessage2 drawMessage1 drawMessage2 moveToNextLevel
+rock paper scissors chosen enemyChosen enemyChoosing wait1
+choosebox limit
+
+
+======
+RULES
+======
+(Säännöt ison pelaajan liikuttamiseen)
+
+[ > Player | Body ] -> [ > Player | > Body ]
+[ ^ Player | Body ] -> [ ^ Player | ^ Body ]
+[ V Player | Body ] -> [ V Player | V Body ]
+[ < Player | Body ] -> [ < Player | < Body ]
+[ > Body | Body ] -> [ > Body | > Body ]
+[ < Body | Body ] -> [ < Body | < Body ]
+[ V Body | Body ] -> [ V Body | V Body ]
+[ ^ Body | Body ] -> [ ^ Body | ^ Body ]
+[ > Body | Wall ] -> cancel
+
+[> Player ] [ muuriPelaaja ] -> [> Player ][> muuriPelaaja]
+
+
+(NPC random liikkuminen)
+
+[stationary npc1] -> [randomDir npc1]
+[stationary npc2] -> [randomDir npc2]
+[stationary npc3] -> [randomDir npc3]
+[stationary npc4] -> [randomDir npc4]
+[stationary npc5] -> [randomDir npc5]
+[stationary npc6] -> [randomDir npc6]
+[stationary npc7] -> [randomDir npc7]
+
+(npc liikkuminen)
+
+[ > npc | Body ] -> [ > npc | > Body ]
+[ ^ npc | Body ] -> [ ^ npc | ^ Body ]
+[ V npc | Body ] -> [ V npc | V Body ]
+[ < npc | Body ] -> [ < npc | < Body ]
+[ > Body | Body ] -> [ > Body | > Body ]
+[ < Body | Body ] -> [ < Body | < Body ]
+[ V Body | Body ] -> [ V Body | V Body ]
+[ ^ Body | Body ] -> [ ^ Body | ^ Body ]
+[ > Body | Wall ] -> cancel
+(npc suojamuurin liikuttaminen)
+
+[ > Body | muuriNpc ] -> [ > Body | > muuriNpc ]
+[ ^ Body | muuriNpc ] -> [ ^ Body | ^ muuriNpc ]
+[ V Body | muuriNpc ] -> [ V Body | V muuriNpc ]
+[ < Body | muuriNpc ] -> [ < Body | < muuriNpc ]
+[ > muuriNpc | muuriNpc ] -> [ > muuriNpc | > muuriNpc ]
+[ < muuriNpc | muuriNpc ] -> [ < muuriNpc | < muuriNpc ]
+[ V muuriNpc | muuriNpc ] -> [ V muuriNpc | V muuriNpc ]
+[ ^ muuriNpc | muuriNpc ] -> [ ^ muuriNpc | ^ muuriNpc ]
+[ > muuriNpc | Wall ] -> cancel
+
+[ > Body | muuriNpc2 ] -> [ > Body | > muuriNpc2 ]
+[ ^ Body | muuriNpc2 ] -> [ ^ Body | ^ muuriNpc2 ]
+[ V Body | muuriNpc2 ] -> [ V Body | V muuriNpc2 ]
+[ < Body | muuriNpc2 ] -> [ < Body | < muuriNpc2 ]
+[ > muuriNpc2 | muuriNpc2 ] -> [ > muuriNpc2 | > muuriNpc2 ]
+[ < muuriNpc2 | muuriNpc2 ] -> [ < muuriNpc2 | < muuriNpc2 ]
+[ V muuriNpc2 | muuriNpc2 ] -> [ V muuriNpc2 | V muuriNpc2 ]
+[ ^ muuriNpc2 | muuriNpc2 ] -> [ ^ muuriNpc2 | ^ muuriNpc2 ]
+[ > muuriNpc2 | Wall ] -> cancel
+
+[ > Body | muuriNpc3 ] -> [ > Body | > muuriNpc3 ]
+[ ^ Body | muuriNpc3 ] -> [ ^ Body | ^ muuriNpc3 ]
+[ V Body | muuriNpc3 ] -> [ V Body | V muuriNpc3 ]
+[ < Body | muuriNpc3 ] -> [ < Body | < muuriNpc3 ]
+[ > muuriNpc3 | muuriNpc3 ] -> [ > muuriNpc3 | > muuriNpc3 ]
+[ < muuriNpc3 | muuriNpc3 ] -> [ < muuriNpc3 | < muuriNpc3 ]
+[ V muuriNpc3 | muuriNpc3 ] -> [ V muuriNpc3 | V muuriNpc3 ]
+[ ^ muuriNpc3 | muuriNpc3 ] -> [ ^ muuriNpc3 | ^ muuriNpc3 ]
+[ > muuriNpc3 | Wall ] -> cancel
+
+[ > Body | muuriNpc4 ] -> [ > Body | > muuriNpc4 ]
+[ ^ Body | muuriNpc4 ] -> [ ^ Body | ^ muuriNpc4 ]
+[ V Body | muuriNpc4 ] -> [ V Body | V muuriNpc4 ]
+[ < Body | muuriNpc4 ] -> [ < Body | < muuriNpc4 ]
+[ > muuriNpc4 | muuriNpc4 ] -> [ > muuriNpc4 | > muuriNpc4 ]
+[ < muuriNpc4 | muuriNpc4 ] -> [ < muuriNpc4 | < muuriNpc4 ]
+[ V muuriNpc4 | muuriNpc4 ] -> [ V muuriNpc4 | V muuriNpc4 ]
+[ ^ muuriNpc4 | muuriNpc4 ] -> [ ^ muuriNpc4 | ^ muuriNpc4 ]
+[ > muuriNpc4 | Wall ] -> cancel
+
+[muurinpc | muurinpc2] -> restart
+[muurinpc2 | muurinpc3] -> restart 
+[muurinpc3 | muurinpc4] -> restart 
+[muurinpc | muurinpc3] -> restart 
+[muurinpc| muurinpc4] -> restart 
+[muurinpc2 | muurinpc4] -> restart 
+(
+(Tappelumoden rulet)
+horizontal [> Player ] [ choosebox ] -> [> Player ][> choosebox]
+
+[ Action player] [rock choosebox ] [ chosen | enemyChosen ] -> [player ][rock] [ rock | enemyChoosing]
+[ Action player] [paper choosebox ] [ chosen | enemyChosen] -> [player ][paper] [ paper | enemyChoosing]
+[ Action player] [scissors choosebox ] [ chosen | enemyChosen] -> [player ][scissors] [ scissors | enemyChoosing]
+
+[enemyChoosing] -> [random options]
+)
+late [muuriPelaaja | muuriNpc] -> win
+
+
+
+(taistelu)
+
+(Valitsimen liikuttaminen taistelumoodissa)
+horizontal [> Player1 ] [ choosebox ] -> [> Player1 ][> choosebox]
+
+(Valitaan vaihtoehto, poistetaan kaikki vaihtoehdot ja siirretään oma valinta "pelilaudalle")
+[ Action player1] [rock choosebox ] [paper ][scissors] [ chosen | enemyChosen ] -> [player1 ][ ][][] [ rock | enemyChoosing]
+[ Action player1] [paper choosebox ] [rock][scissors] [ chosen | enemyChosen] -> [player1 ][ ][][] [ paper | enemyChoosing]
+[ Action player1] [scissors choosebox ] [rock] [paper] [ chosen | enemyChosen] -> [player1 ][ ][][] [ scissors | enemyChoosing]
+
+(Vastustaja valitsee oman vaihtoehtonsa)
+[wait1] -> [random options] again
+[enemyChoosing] -> [wait1]
+
+(Kumpi voittaa?)
+up [rock | rock] [gameState] -> [rock | rock] [drawState]
+up [rock | paper] [gameState] -> [rock | paper] [loseState]
+up [rock | scissors] [gameState] -> [rock | scissors] [winState]
+up [paper | rock] [gameState]-> [paper | rock] [winState]
+up [paper | paper] [gameState]-> [paper | paper] [drawState]
+up [paper | scissors] [gameState]-> [paper | scissors] [loseState]
+up [scissors | rock] [gameState]-> [scissors | rock] [loseState]
+up [scissors | paper] [gameState] -> [scissors | paper] [winState]
+up [scissors | scissors] [gameState] -> [scissors | scissors] [drawState]
+
+(Peli on päättynyt, aloitetaan timer viestin näyttämiseksi)
+[ gameEndTimer2 ] -> [ gameHasEnded ] again
+[ gameEndTimer1 ] -> [ gameEndTimer2 ] again
+[ gameEndTimer0 ] -> [ gameEndTimer1 ] again
+right [endState][gameEndTimer] -> [endstate][gameEndTimer0]
+
+(Arvotaan päätösviesti lopputuloksen perusteella)
+[drawState][gameHasEnded] -> [drawState][random drawMessage]
+[winState][gameHasEnded] -> [moveToNextLevel][random winMessage]
+[loseState][gameHasEnded] -> [loseState][random loseMessage]
+
+[winMessage1] -> win message voitit
+[winMessage2] -> win message noni voitit
+[drawMessage1] -> restart message pelataa uusiks
+[drawMessage2] -> restart message juuh tasapeli
+[loseMessage1] -> restart message oho pelasin liian aikasi otetaa uusiks
+[loseMessage2] -> restart message sori pelasin vääräs järjestykses otetaa uusiks
+
+==============
+WINCONDITIONS
+==============
+
+Some moveToNextLevel
+
+=======
+LEVELS
+=======
+
+(Player sprite
+49tah
+38rog
+27pif
+16wud
+05qys)
+
+(Tupsu sprite
+äéîóø
+ãèíò÷
+âçpñö
+áæëðõ
+àåêïô)
+
+
+(N sprite
+ý°µº«
+ü¯´¹»
+û®p¸¼
+úÿ²·ì
+ùþ±¶³)
+
+
+
+(NPC1 sprite
+49tah
+38rog
+27╗if
+16wud
+05qys)
+
+(NPC2 sprite
+49tah
+38rog
+27╝if
+16wud
+05qys)
+
+(NPC3 sprite
+49tah
+38rog
+27¢if
+16wud
+05qys)
+
+(NPC4 sprite
+49tah
+38rog
+27¥if
+16wud
+05qys)
+
+(NPC5 sprite
+49tah
+38rog
+27┐if
+16wud
+05qys)
+
+(NPC6 sprite
+49tah
+38rog
+27┴if
+16wud
+05qys)
+
+(NPC7 sprite
+49tah
+38rog
+27├if
+16wud
+05qys)
+
+
+
+################################################################################################################
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..........................................................nnnnnnn.............................................#
+#..........................................................n49tahn.............................................#
+#..........................................................n38rogn.............................................#
+#..............................mmmmmmm.....................n27├ifn.............................................#
+#..............................m49tahm.....................n16wudn.............................................#
+#..............................m38rogm.....................n05qysn.............................................#
+#..............................m27pifm.....................nnnnnnn.............................................#
+#..............................m16wudm.........................................................................#
+#..............................m05qysm.........................................................................#
+#..............................mmmmmmm.........................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..........................................░░░░░░░.............................................................#
+#..........................................░49tah░.............................................................#
+#..........................................░38rog░.............................................................#
+#..........................................░27╝if░.............................................................#
+#..........................................░16wud░.............................................................#
+#..........................................░05qys░.............................................................#
+#..........................................░░░░░░░.............................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#...........................................................................▓▓▓▓▓▓▓............................#
+#...........................................................................▓49tah▓............................#
+#...........................................................................▓38rog▓............................#
+#..........▒▒▒▒▒▒▒..........................................................▓27¥if▓............................#
+#..........▒49tah▒..........................................................▓16wud▓............................#
+#..........▒38rog▒..........................................................▓05qys▓............................#
+#..........▒27¢if▒..........................................................▓▓▓▓▓▓▓............................#
+#..........▒16wud▒.............................................................................................#
+#..........▒05qys▒.............................................................................................#
+#..........▒▒▒▒▒▒▒.............................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+################################################################################################################
+
+(Fuksitaistelu)
+¿¡╬╬;:-╬
+╬╬╬_!"@╬
+╬╬╬£¤$%╬
+..e.€&/.
+.©c.{¨~.
+½ªB*B§½B
+
+################################################################################################################
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................mmmmmmm.........................................................................#
+#..............................mäéîóøm.........................................................................#
+#..............................mãèíò÷m.........................................................................#
+#..............................mâçpñöm.........................................................................#
+#..............................máæëðõm.........................................................................#
+#..............................màåêïôm.........................................................................#
+#..............................mmmmmmm.........................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#............................................................nnnnnnn...........................................#
+#............................................................näéîóøn...........................................#
+#............................................................nãèíò÷n...........................................#
+#............................................................nâç╗ñön...........................................#
+#............................................................náæëðõn...........................................#
+#............................................................nàåêïôn...........................................#
+#............................................................nnnnnnn...........................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+################################################################################################################
+
+
+(Teekkaritaistelu)
+¿¡╬╬ƒ„…╬
+╬╬╬†‡ˆ‰╬
+╬╬╬Š‹ŒŽ╬
+..e‘€&/.
+.©c’{¨~.
+½ªB*B§½B
+
+################################################################################################################
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................mmmmmmm.........................................................................#
+#..............................mý°µº«m.........................................................................#
+#..............................mü¯´¹»m.........................................................................#
+#..............................mû®p¸¼m.........................................................................#
+#..............................múÿ²·ìm.........................................................................#
+#..............................mùþ±¶³m.........................................................................#
+#..............................mmmmmmm.........................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..................nnnnnnn.....................................................................................#
+#..................ný°µº«n.....................................................................................#
+#..................nü¯´¹»n.....................................................................................#
+#..................nû®╗¸¼n.....................................................................................#
+#..................núÿ²·ìn.....................................................................................#
+#..................nùþ±¶³n.....................................................................................#
+#..................nnnnnnn.....................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+#..............................................................................................................#
+################################################################################################################
+
+(Vanhustaistelu)
+¿¡╬╬ƒ„…╬
+╬╬╬†“”‰╬
+╬╬╬Š‹ŒŽ╬
+..e•€&/.
+.©c–{¨~.
+½ªB*B§½B
+
+message läpäisit elämän ja kuolit voitit siis evoluutiopelin

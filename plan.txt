@@ -1,5 +1,8 @@
 SUUNNITELMA: Fuksi, Tupsu - Evoluutiopeli
 
+Avainsana generaattorista:
+Evolution
+
 Lyhyt kuvaus:
 
     Pelissä pelataan orientaatioviikolla merkittävässä roolissa ollutta evoluutiopeliä.
