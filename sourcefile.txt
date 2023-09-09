@@ -1428,6 +1428,30 @@ RULES
 [ ^ muuriNpc4 | muuriNpc4 ] -> [ ^ muuriNpc4 | ^ muuriNpc4 ]
 [ > muuriNpc4 | Wall ] -> cancel
 
+[ > muurinpc | muurinpc2] -> cancel
+[ > muurinpc | muurinpc3] -> cancel
+[ > muurinpc | muurinpc4] -> cancel
+[ > muurinpc2 | muurinpc] -> cancel
+[ > muurinpc2 | muurinpc3] -> cancel
+[ > muurinpc2 | muurinpc4] -> cancel
+[ > muurinpc3 | muurinpc] -> cancel
+[ > muurinpc3 | muurinpc2] -> cancel
+[ > muurinpc3 | muurinpc4] -> cancel
+[ > muurinpc4 | muurinpc] -> cancel
+[ > muurinpc4 | muurinpc2] -> cancel
+[ > muurinpc4 | muurinpc3] -> cancel
+[ > muurinpc | | muurinpc2] -> cancel
+[ > muurinpc | | muurinpc3] -> cancel
+[ > muurinpc | | muurinpc4] -> cancel
+[ > muurinpc2 | | muurinpc] -> cancel
+[ > muurinpc2 | | muurinpc3] -> cancel
+[ > muurinpc2 | | muurinpc4] -> cancel
+[ > muurinpc3 | | muurinpc] -> cancel
+[ > muurinpc3 | | muurinpc2] -> cancel
+[ > muurinpc3 | | muurinpc4] -> cancel
+[ > muurinpc4 | | muurinpc] -> cancel
+[ > muurinpc4 | | muurinpc2] -> cancel
+[ > muurinpc4 | | muurinpc3] -> cancel
 
 (
 (Tappelumoden rulet)
