@@ -1428,12 +1428,7 @@ RULES
 [ ^ muuriNpc4 | muuriNpc4 ] -> [ ^ muuriNpc4 | ^ muuriNpc4 ]
 [ > muuriNpc4 | Wall ] -> cancel
 
-[muurinpc | muurinpc2] -> restart
-[muurinpc2 | muurinpc3] -> restart 
-[muurinpc3 | muurinpc4] -> restart 
-[muurinpc | muurinpc3] -> restart 
-[muurinpc| muurinpc4] -> restart 
-[muurinpc2 | muurinpc4] -> restart 
+
 (
 (Tappelumoden rulet)
 horizontal [> Player ] [ choosebox ] -> [> Player ][> choosebox]
@@ -1774,4 +1769,3 @@ LEVELS
 ½ªB*B§½B
 
 message Voitit teekkarin evoluutiopelin ja saavutit kuoleman
-
